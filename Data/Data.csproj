@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin-old\**" />
+    <Compile Remove="obj-old\**" />
+    <EmbeddedResource Remove="bin-old\**" />
+    <EmbeddedResource Remove="obj-old\**" />
+    <None Remove="bin-old\**" />
+    <None Remove="obj-old\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net7.0\Data.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net7.0\Data.deps.json" />
+    <Content Include="obj\Data.csproj.nuget.dgspec.json" />
+    <Content Include="obj\Debug\net7.0\Data.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net7.0\Data.dll" />
+    <None Include="bin\Debug\net7.0\Data.pdb" />
+    <None Include="obj\Data.csproj.nuget.g.props" />
+    <None Include="obj\Data.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\net7.0\Data.assets.cache" />
+    <None Include="obj\Debug\net7.0\Data.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net7.0\Data.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net7.0\Data.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net7.0\Data.dll" />
+    <None Include="obj\Debug\net7.0\Data.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net7.0\Data.pdb" />
+    <None Include="obj\Debug\net7.0\refint\Data.dll" />
+    <None Include="obj\Debug\net7.0\ref\Data.dll" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+</Project>

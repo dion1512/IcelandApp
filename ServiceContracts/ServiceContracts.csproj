@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin-old\**" />
+    <Compile Remove="obj-old\**" />
+    <EmbeddedResource Remove="bin-old\**" />
+    <EmbeddedResource Remove="obj-old\**" />
+    <None Remove="bin-old\**" />
+    <None Remove="obj-old\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net7.0\ServiceContracts.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net7.0\ServiceContracts.deps.json" />
+    <Content Include="obj\Debug\net7.0\ServiceContracts.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\ServiceContracts.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net7.0\Data.dll" />
+    <None Include="bin\Debug\net7.0\Data.pdb" />
+    <None Include="bin\Debug\net7.0\ServiceContracts.dll" />
+    <None Include="bin\Debug\net7.0\ServiceContracts.pdb" />
+    <None Include="obj\Debug\net7.0\refint\ServiceContracts.dll" />
+    <None Include="obj\Debug\net7.0\ref\ServiceContracts.dll" />
+    <None Include="obj\Debug\net7.0\ServiceContracts.assets.cache" />
+    <None Include="obj\Debug\net7.0\ServiceContracts.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net7.0\ServiceContracts.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net7.0\ServiceContracts.csproj.CopyComplete" />
+    <None Include="obj\Debug\net7.0\ServiceContracts.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net7.0\ServiceContracts.dll" />
+    <None Include="obj\Debug\net7.0\ServiceContracts.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net7.0\ServiceContracts.pdb" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\ServiceContracts.csproj.nuget.g.props" />
+    <None Include="obj\ServiceContracts.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj" />
+  </ItemGroup>
+
+</Project>
