@@ -27,6 +27,8 @@ Your task is to write a program which automates the inventory management based o
 ## Further Considerations
 I have completed the task in a way that demonstrates C# and .NET ability. minimising the use of LINQ, databases and other external resources. If I had more time, I would have created a database to store these values. I would also create a continuous webjob which would encompass the code in the updateQuality method and run daily using a trigger. To improve performance, I would adapt the methods to run asynchronously, utilising tasks.
 
+I have not handled the INVALID ITEM. Without a database of existing items to compare against, I would have instead checked against a list of known items (as per the test input), and if the input did not match these items, I would have returned the expected result of NO SUCH ITEM.
+
 ## Instructions
 1. Clone the repository to Visual Studio
 2. Launch the application locally
