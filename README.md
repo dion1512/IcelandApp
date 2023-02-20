@@ -25,7 +25,7 @@ Your task is to write a program which automates the inventory management based o
 + "Fresh Item" degrade in Quality twice as fast as “Frozen Item”
 
 ## Further Considerations
-I have completed the task in this way to demonstrate C# and ASP.NET ability. If I had more time, I would have created a database to store these values. I would also create a continuous webjob which would encompass the code in the updateQuality method, which would run daily using a trigger. To improve performance, I would adapt the methods to run asynchronously, utilising tasks.
+I have completed the task in a way that demonstrates C# and .NET ability. minimising the use of LINQ, databases and other external resources. If I had more time, I would have created a database to store these values. I would also create a continuous webjob which would encompass the code in the updateQuality method and run daily using a trigger. To improve performance, I would adapt the methods to run asynchronously, utilising tasks.
 
 ## Instructions
 1. Clone the repository to Visual Studio
