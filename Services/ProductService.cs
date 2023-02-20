@@ -64,6 +64,7 @@ namespace Services
                     _ => product.SellIn
                 };
                
+               
                 if(product.SellIn >= 0)
                 {
                     // handle in date products
@@ -91,7 +92,11 @@ namespace Services
                         _ => product.Quality
                     };
                 }
-                
+                if (product.Quality > 50)
+                {
+                    product.Quality = 50;
+                }
+
             }
             
             
